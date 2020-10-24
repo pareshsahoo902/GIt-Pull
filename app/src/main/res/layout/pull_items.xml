@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="@drawable/border"
+    android:elevation="8dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/pulltitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Pull Title : "
+        android:textColor="#202020"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pulltitletext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/pulltitle"
+        android:text="text of pulll ......."
+        android:textColor="#424141"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/prnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pulltitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="PR Number: "
+        android:textColor="#202020"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/prnumbertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pulltitletext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/prnumber"
+        android:text="#00000000"
+        android:textColor="#424141"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/pull_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prnumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Pull Status: "
+        android:textColor="#202020"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/pullcolor"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@+id/pull_status"
+        android:layout_below="@+id/prnumbertext"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/holo_green_dark"/>
+
+    <TextView
+        android:id="@+id/pull_statustext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prnumbertext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/pullcolor"
+        android:text="open"
+        android:textColor="#424141"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pull_status"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Created : "
+        android:textColor="#202020"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/created_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pull_statustext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/prnumber"
+        android:text="Today"
+        android:textColor="#424141"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

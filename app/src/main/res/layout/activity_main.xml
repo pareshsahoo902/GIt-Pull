@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/owner_name"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:hint="Github Owner Name"
+       android:textSize="17sp"
+       android:background="@drawable/rounded_button"
+       android:paddingLeft="10dp"
+       android:layout_centerVertical="true"
+       />
+
+    <EditText
+       android:id="@+id/repository_name"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:hint="Repository name"
+        android:layout_below="@+id/owner_name"
+        android:layout_marginTop="20sp"
+       android:textSize="17sp"
+       android:background="@drawable/rounded_button"
+       android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+       />
+
+    <Button
+       android:id="@+id/submitbtn"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+        android:layout_below="@+id/repository_name"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#E9931509"
+       android:textSize="17sp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:text="SUbmit"
+       />
+
+</RelativeLayout>
